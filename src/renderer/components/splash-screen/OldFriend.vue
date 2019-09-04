@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import electron from "electron";
+import comparePassword from "../../services/comparePassword";
 export default {
   name: "old-friend",
   data() {
@@ -36,8 +38,25 @@ export default {
   },
   methods: {
     unsealVault() {
-      //implem unseal vault in main process
+      electron.ipcRenderer.send("verifyHash");
+    },
+    openToastMessage(msg) {
+      this.$buefy.toast.open({
+        duration: 3000,
+        message: msg,
+        position: "is-bottom",
+        type: "is-danger"
+      });
     }
+  },
+  mounted() {
+    electron.ipcRenderer.on("hashResponse", (event, hash) => {
+      if (comparePassword(this.password, hash)) {
+        // change the view to home
+      } else {
+        this.openToastMessage("Incorrect master password");
+      }
+    });
   }
 };
 </script>
