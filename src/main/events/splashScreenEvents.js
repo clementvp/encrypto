@@ -6,7 +6,7 @@ ipcMain.on("frontReady", event => {
     initDb();
   }
   const utils = readUtils();
-  if (!utils.activate || !utils.hash || !utils.iv || !utils.salt) {
+  if (!utils.activate || !utils.hash) {
     event.reply("newComer");
   } else {
     event.reply("oldFriend");
