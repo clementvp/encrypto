@@ -19,14 +19,16 @@ import router from "./router";
 import store from "./store";
 import App from "./App.vue";
 
-library.add(faUserCircle);
-library.add(faCreditCard);
-library.add(faGamepad);
-library.add(faGlobe);
-library.add(faAddressBook);
-library.add(faAddressCard);
-library.add(faPlus);
-library.add(faLock);
+library.add(
+  faUserCircle,
+  faCreditCard,
+  faGamepad,
+  faGlobe,
+  faAddressBook,
+  faAddressCard,
+  faPlus,
+  faLock
+);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
