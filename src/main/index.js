@@ -1,6 +1,7 @@
 import { app, BrowserWindow, Tray, nativeImage } from "electron";
 import path from "path";
 import "./events/splashScreenEvents";
+import "./events/newComerEvents";
 const isDevelopment = process.env.NODE_ENV !== "production";
 app.on("ready", () => {
   let window = new BrowserWindow({

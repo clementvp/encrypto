@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import electron from "electron";
 export default {
   name: "new-comer",
   data() {
@@ -47,7 +48,10 @@ export default {
       } else if (this.password.length <= 8) {
         this.openToastMessage(`Password must be at least 8 chars !`);
       } else {
-        // setup vault in main
+        electron.ipcRenderer.send("initVault", this.password);
+        electron.ipcRenderer.on("initVaultOk", () => {
+          // handle the init vault ok, so change the view
+        });
       }
     },
     openToastMessage(msg) {
