@@ -8,7 +8,7 @@ export default new Vuex.Store({
     hash: "",
     iv: "",
     salt: "",
-    data: ""
+    data: {}
   },
   mutations: {
     setHash(state, hash) {
