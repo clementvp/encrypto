@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 
-const hashMasterPassword = masterPassword => {
+const hashPassword = masterPassword => {
   return bcrypt.hashSync(masterPassword, 10);
 };
 
-export default hashMasterPassword;
+export default hashPassword;
