@@ -31,7 +31,7 @@
 
 <script>
 import electron from "electron";
-import hashMasterPassword from "../../services/hash";
+import hashPassword from "../../services/hashPassword";
 export default {
   name: "new-comer",
   data() {
@@ -49,10 +49,7 @@ export default {
       } else if (this.password.length <= 8) {
         this.openToastMessage(`Password must be at least 8 chars !`);
       } else {
-        electron.ipcRenderer.send(
-          "initVault",
-          hashMasterPassword(this.password)
-        );
+        electron.ipcRenderer.send("initVault", hashPassword(this.password));
       }
     },
     openToastMessage(msg) {
