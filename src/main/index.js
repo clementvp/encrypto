@@ -37,7 +37,9 @@ app.on("ready", () => {
     }
   });
 
-  const tray = new Tray(nativeImage.createFromDataURL(require("./ico.png")));
+  const tray = new Tray(
+    nativeImage.createFromDataURL(require("./assets/ico.png"))
+  );
   tray.on("click", function() {
     window.isVisible() ? window.hide() : window.show();
   });
