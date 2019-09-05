@@ -28,7 +28,7 @@
 
 <script>
 import electron from "electron";
-import comparePassword from "../../services/comparePassword";
+import { comparePassword } from "../../services/passwordService";
 export default {
   name: "old-friend",
   data() {

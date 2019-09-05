@@ -31,7 +31,7 @@
 
 <script>
 import electron from "electron";
-import hashPassword from "../../services/hashPassword";
+import { hashPassword } from "../../services/passwordService";
 export default {
   name: "new-comer",
   data() {
