@@ -63,7 +63,7 @@ export default {
   },
   mounted() {
     electron.ipcRenderer.on("initVaultOk", () => {
-      // handle the init vault ok, so change the view to home
+      this.$router.push("home");
     });
   }
 };

@@ -52,7 +52,7 @@ export default {
   mounted() {
     electron.ipcRenderer.on("hashResponse", (event, hash) => {
       if (comparePassword(this.password, hash)) {
-        // change the view to home
+        this.$router.push("home");
       } else {
         this.openToastMessage("Incorrect master password");
       }
