@@ -8,7 +8,8 @@ export default new Vuex.Store({
     hash: "",
     iv: "",
     salt: "",
-    data: {}
+    data: {},
+    categorie: null
   },
   mutations: {
     setHash(state, hash) {
@@ -22,6 +23,9 @@ export default new Vuex.Store({
     },
     setSalt(state, salt) {
       state.salt = salt;
+    },
+    setCategorie(state, categorie) {
+      state.categorie = categorie;
     }
   },
   actions: {

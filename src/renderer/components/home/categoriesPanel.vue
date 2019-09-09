@@ -119,8 +119,11 @@ export default {
         }
         return elem;
       });
-      this.$emit("choosenCategory", key);
+      this.$store.commit("setCategorie", key);
     }
+  },
+  mounted() {
+    this.choosenCategory(0);
   }
 };
 </script>

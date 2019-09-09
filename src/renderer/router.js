@@ -8,12 +8,12 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: "/",
+      path: "/sc",
       name: "splash-screen",
       component: SplashScreen
     },
     {
-      path: "/home",
+      path: "/",
       name: "home",
       component: Home
     }
