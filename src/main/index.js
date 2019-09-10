@@ -9,7 +9,7 @@ app.on("ready", () => {
     show: false,
     width: 1024,
     height: 700,
-    title: "Mirmidon",
+    title: "Encrypto",
     resizable: false,
     fullscreenable: false,
     webPreferences: {

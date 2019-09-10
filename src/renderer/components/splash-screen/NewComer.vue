@@ -3,7 +3,7 @@
     <div class="up">
       <div class="container-up">
         <h4 class="has-text-centered has-text-white title is-4">
-          Welcome to Mirmidon
+          Welcome to Encrypto
         </h4>
         <h5 class="has-text-centered has-text-white title is-5">
           It seems you have not set up a vault yet

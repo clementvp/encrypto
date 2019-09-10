@@ -1,8 +1,8 @@
 {
   "build": {
-    "appId": "com.clementvp.mirmidon"
+    "appId": "com.clementvp.encrypto"
   },
-  "name": "mirmidon",
+  "name": "encrypto",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

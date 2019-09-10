@@ -3,7 +3,7 @@
     <div class="up">
       <div class="container-up">
         <h4 class="has-text-centered has-text-white title is-4">
-          Welcome back to Mirmidon
+          Welcome back to Encrypto
         </h4>
         <h5 class="has-text-centered has-text-white title is-5">
           Please unseal your vault to continue
